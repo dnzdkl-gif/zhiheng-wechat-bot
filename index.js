@@ -13,8 +13,8 @@ app.post('/wechat', (req, res) => {
     ToUserName: msg.FromUserName,
     FromUserName: msg.ToUserName,
     CreateTime: Math.floor(Date.now() / 1000),
-    MsgType: "text",
-    Content: "收到你的消息：" + (msg.Content || "你好")
+    MsgType: 'text',
+    Content: '收到你的消息：' + (msg.Content || '你好')
   };
 
   res.json(reply);
@@ -22,7 +22,7 @@ app.post('/wechat', (req, res) => {
 
 // 测试接口
 app.get('/', (req, res) => {
-  res.send("server running");
+  res.send('server running');
 });
 
 app.listen(3000, () => {
