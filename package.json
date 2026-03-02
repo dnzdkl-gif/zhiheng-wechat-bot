@@ -1,7 +1,7 @@
 {
   "name": "wxcloudrun-express",
   "version": "1.0.0",
-  "description": "微信云托管 express 框架模版",
+  "description": "微信云托管 express 框架模板",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -13,7 +13,8 @@
     "express": "^4.16.4",
     "morgan": "^1.10.0",
     "mysql2": "^2.3.2",
-    "sequelize": "^6.8.0"
+    "sequelize": "^6.8.0",
+    "axios": "^1.6.0"
   },
   "engines": {
     "node": ">=12.0.0"
