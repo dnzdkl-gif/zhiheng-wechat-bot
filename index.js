@@ -55,3 +55,11 @@ app.get('/', (req, res) => {
 app.listen(3000, () => {
   console.log('server running');
 });
+app.get('/nettest', async (req, res) => {
+  try {
+    const r = await axios.get('https://www.baidu.com', { timeout: 8000 });
+    res.send('baidu ok ' + r.status);
+  } catch (e) {
+    res.status(500).send('baidu fail ' + (e.code || e.message));
+  }
+});
